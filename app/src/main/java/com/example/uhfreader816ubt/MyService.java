@@ -59,13 +59,10 @@ public class MyService extends Service {
     public static String RecvString="";
     public static String ObjectRecv="";
     private Handler myHandler = new Handler() {  
-        //2.ÖØÐ´ÏûÏ¢´¦Àíº¯Êý
-        public void handleMessage(Message msg) {   
+        public void handleMessage(Message msg) {
              switch (msg.what) {   
-                  //ÅÐ¶Ï·¢ËÍµÄÏûÏ¢
-                  case 1:   
+                  case 1:
                   {
-                       //¸üÐÂView
                 	   String state = msg.getData().getString("connect_state");
                        if(state.equals("connected"))
                        {
@@ -115,9 +112,9 @@ public class MyService extends Service {
 	   return binder;
    }
    
-   //¶¨ÒåÄÚÈÝÀà¼Ì³ÐBinder
+   //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì³ï¿½Binder
    public class LocalBinder extends Binder{
-       //·µ»Ø±¾µØ·þÎñ
+       //ï¿½ï¿½ï¿½Ø±ï¿½ï¿½Ø·ï¿½ï¿½ï¿½
 	   MyService getService(){
            return MyService.this;
        }
@@ -143,7 +140,7 @@ public class MyService extends Service {
            BTClient.mBluetoothLeService = null;
    } 
    
-   /*service »Øµ÷º¯Êý*/
+   /*service ï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½*/
    private final ServiceConnection mServiceConnection = new ServiceConnection() {
        @Override
        public void onServiceConnected(ComponentName componentName, IBinder service) {
@@ -151,7 +148,7 @@ public class MyService extends Service {
            if (!BTClient.mBluetoothLeService.initialize()) {
            }
            // Automatically connects to the device upon successful start-up initialization.
-           //µ÷ÓÃbluetoothservice µÄconnect º¯Êý£¬½øÐÐÁ¬½Ó
+           //ï¿½ï¿½ï¿½ï¿½bluetoothservice ï¿½ï¿½connect ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
            BTClient.mBluetoothLeService.connect(mDeviceAddress);
        }
 
@@ -179,7 +176,7 @@ public class MyService extends Service {
                status="disconnected";
                updateConnectionState(status);
                //nConnect=false;
-              // unregisterReceiver(mGattUpdateReceiver);//¶Ï¿ªÁ´½Ó×¢Ïú
+              // unregisterReceiver(mGattUpdateReceiver);//ï¿½Ï¿ï¿½ï¿½ï¿½ï¿½ï¿½×¢ï¿½ï¿½
  			  //  BTClient.mBluetoothLeService = null;
                System.out.println("BroadcastReceiver :"+"device disconnected");
               
@@ -201,7 +198,7 @@ public class MyService extends Service {
        }
    };
    
-   /*¸üÐÂÁ¬½Ó×´Ì¬*/
+   /*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½×´Ì¬*/
    private void updateConnectionState( String status)
    {
        Message msg =new Message();
@@ -214,7 +211,7 @@ public class MyService extends Service {
    }
    
    
-   /*ÒâÍ¼¹ýÂËÆ÷*/
+   /*ï¿½ï¿½Í¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
    private  IntentFilter makeGattUpdateIntentFilter() {
        final IntentFilter intentFilter = new IntentFilter();
        intentFilter.addAction(BluetoothLeService.ACTION_GATT_CONNECTED);
@@ -258,7 +255,7 @@ public class MyService extends Service {
    public void ConnectBT(String mDeviceAddress)
    {
        if (mScanning) {
-       	/*Í£Ö¹É¨ÃèÉè±¸*/
+       	/*Í£Ö¹É¨ï¿½ï¿½ï¿½è±¸*/
            mBluetoothAdapter.stopLeScan(mLeScanCallback);
            mScanning = false;
        }
@@ -282,24 +279,24 @@ public class MyService extends Service {
 	        String unknownServiceString = "unknown_service";
 	        String unknownCharaString = "unknown_characteristic";
 		 
-	        //·þÎñÊý¾Ý,¿ÉÀ©Õ¹ÏÂÀ­ÁÐ±íµÄµÚÒ»¼¶Êý¾Ý
+	        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½Õ¹ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½Äµï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	        ArrayList<HashMap<String, String>> gattServiceData = new ArrayList<HashMap<String, String>>();
 	        
-	        //ÌØÕ÷Êý¾Ý£¨Á¥ÊôÓÚÄ³Ò»¼¶·þÎñÏÂÃæµÄÌØÕ÷Öµ¼¯ºÏ£©
+	        //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä³Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½Ï£ï¿½
 	        ArrayList<ArrayList<HashMap<String, String>>> gattCharacteristicData
 	                = new ArrayList<ArrayList<HashMap<String, String>>>();
 	        
-	        //²¿·Ö²ã´Î£¬ËùÓÐÌØÕ÷Öµ¼¯ºÏ
+	        //ï¿½ï¿½ï¿½Ö²ï¿½Î£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½
 	        mGattCharacteristics = new ArrayList<ArrayList<BluetoothGattCharacteristic>>();
 	        
 	     // Loops through available GATT Services.
 	        for (BluetoothGattService gattService : gattServices) {
 	        
-	        	//»ñÈ¡·þÎñÁÐ±í
+	        	//ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½
 	        	HashMap<String, String> currentServiceData = new HashMap<String, String>();
 	            uuid = gattService.getUuid().toString();
 	            
-	            //²é±í£¬¸ù¾Ý¸Ãuuid»ñÈ¡¶ÔÓ¦µÄ·þÎñÃû³Æ¡£SampleGattAttributesÕâ¸ö±íÐèÒª×Ô¶¨Òå¡£
+	            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý¸ï¿½uuidï¿½ï¿½È¡ï¿½ï¿½Ó¦ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ¡ï¿½SampleGattAttributesï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Òªï¿½Ô¶ï¿½ï¿½å¡£
 	           
 	            gattServiceData.add(currentServiceData);
 	            
@@ -308,7 +305,7 @@ public class MyService extends Service {
 	            ArrayList<HashMap<String, String>> gattCharacteristicGroupData =
 	                    new ArrayList<HashMap<String, String>>();
 	            
-	            //´Óµ±Ç°Ñ­»·ËùÖ¸ÏòµÄ·þÎñÖÐ¶ÁÈ¡ÌØÕ÷ÖµÁÐ±í
+	            //ï¿½Óµï¿½Ç°Ñ­ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½È¡ï¿½ï¿½ï¿½ï¿½Öµï¿½Ð±ï¿½
 	            List<BluetoothGattCharacteristic> gattCharacteristics =
 	                    gattService.getCharacteristics();
 	            
@@ -316,7 +313,7 @@ public class MyService extends Service {
 	                    new ArrayList<BluetoothGattCharacteristic>();
 	            
 	         // Loops through available Characteristics.
-	            //¶ÔÓÚµ±Ç°Ñ­»·ËùÖ¸ÏòµÄ·þÎñÖÐµÄÃ¿Ò»¸öÌØÕ÷Öµ
+	            //ï¿½ï¿½ï¿½Úµï¿½Ç°Ñ­ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½Ðµï¿½Ã¿Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
 	            for (final BluetoothGattCharacteristic gattCharacteristic : gattCharacteristics) {
 	                charas.add(gattCharacteristic);
 	                HashMap<String, String> currentCharaData = new HashMap<String, String>();
@@ -324,36 +321,36 @@ public class MyService extends Service {
               
 	               
 	                if(gattCharacteristic.getUuid().toString().equals(HEART_RATE_MEASUREMENT)){                    
-	                    //²âÊÔ¶ÁÈ¡µ±Ç°CharacteristicÊý¾Ý£¬»á´¥·¢mOnDataAvailable.onCharacteristicRead()  
+	                    //ï¿½ï¿½ï¿½Ô¶ï¿½È¡ï¿½ï¿½Ç°Characteristicï¿½ï¿½ï¿½Ý£ï¿½ï¿½á´¥ï¿½ï¿½mOnDataAvailable.onCharacteristicRead()  
 	                   
 	                      
-	                    //½ÓÊÜCharacteristic±»Ð´µÄÍ¨Öª,ÊÕµ½À¶ÑÀÄ£¿éµÄÊý¾Ýºó»á´¥·¢mOnDataAvailable.onCharacteristicWrite()  
+	                    //ï¿½ï¿½ï¿½ï¿½Characteristicï¿½ï¿½Ð´ï¿½ï¿½Í¨Öª,ï¿½Õµï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ýºï¿½á´¥ï¿½ï¿½mOnDataAvailable.onCharacteristicWrite()  
 	                	BTClient.mBluetoothLeService.setCharacteristicNotification(gattCharacteristic, true);  
 	                    target_chara=gattCharacteristic;
-	                    //ÉèÖÃÊý¾ÝÄÚÈÝ  
-	                    //ÍùÀ¶ÑÀÄ£¿éÐ´ÈëÊý¾Ý  
+	                    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  
+	                    //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä£ï¿½ï¿½Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½  
 	                    //mBluetoothLeService.writeCharacteristic(gattCharacteristic);  
 	                }  
 	                List<BluetoothGattDescriptor> descriptors= gattCharacteristic.getDescriptors();
 	                for(BluetoothGattDescriptor descriptor:descriptors)
 	                {
 	                	System.out.println("---descriptor UUID:"+descriptor.getUuid());
-	                	//»ñÈ¡ÌØÕ÷ÖµµÄÃèÊö
+	                	//ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	                	BTClient.mBluetoothLeService.getCharacteristicDescriptor(descriptor); 
 	                	//mBluetoothLeService.setCharacteristicNotification(gattCharacteristic, true);
 	                }
 	                
 	                gattCharacteristicGroupData.add(currentCharaData);
 	            }
-	            //°´ÏÈºóË³Ðò£¬·Ö²ã´Î·ÅÈëÌØÕ÷Öµ¼¯ºÏÖÐ£¬Ö»ÓÐÌØÕ÷Öµ
+	            //ï¿½ï¿½ï¿½Èºï¿½Ë³ï¿½ò£¬·Ö²ï¿½Î·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½Ð£ï¿½Ö»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
 	            mGattCharacteristics.add(charas);
-	            //¹¹¼þµÚ¶þ¼¶À©Õ¹ÁÐ±í£¨·þÎñÏÂÃæµÄÌØÕ÷Öµ£©
+	            //ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ï¿½Õ¹ï¿½Ð±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½
 	            gattCharacteristicData.add(gattCharacteristicGroupData);
 	            
 	        }
      }
    
-   /*É¨ÃèÀ¶ÑÀÉè±¸µÄ»Øµ÷º¯Êý£¬»á·µ»ØÀ¶ÑÀBluetoothDevice£¬¿ÉÒÔ»ñÈ¡name MAC µÈµÈ*/
+   /*É¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½è±¸ï¿½Ä»Øµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½á·µï¿½ï¿½ï¿½ï¿½ï¿½ï¿½BluetoothDeviceï¿½ï¿½ï¿½ï¿½ï¿½Ô»ï¿½È¡name MAC ï¿½Èµï¿½*/
 	public  BluetoothAdapter.LeScanCallback mLeScanCallback =
 	        new BluetoothAdapter.LeScanCallback() {
 	    

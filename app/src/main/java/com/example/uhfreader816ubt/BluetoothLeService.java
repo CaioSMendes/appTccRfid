@@ -66,7 +66,6 @@ public class BluetoothLeService extends Service {
     public void setOnDataAvailableListener(OnDataAvailableListener l){
 		mOnDataAvailableListener = l;
 	}
-	/*Á¬½ÓÔ¶³ÌÉè±¸µÄ»Øµ÷º¯Êý*/
     private final BluetoothGattCallback mGattCallback = new BluetoothGattCallback() {
         @Override
         public void onConnectionStateChange(BluetoothGatt gatt, int status, int newState) {
@@ -74,7 +73,6 @@ public class BluetoothLeService extends Service {
             if (newState == BluetoothProfile.STATE_CONNECTED) {
                 intentAction = ACTION_GATT_CONNECTED;
                 mConnectionState = STATE_CONNECTED;
-                /*Í¨¹ý¹ã²¥¸üÐÂÁ¬½Ó×´Ì¬*/
                 broadcastUpdate(intentAction);
                 Log.i(TAG, "Connected to GATT server.");
                 // Attempts to discover services after successful connection.
@@ -126,7 +124,7 @@ public class BluetoothLeService extends Service {
 			// TODO Auto-generated method stub
 			//super.onCharacteristicWrite(gatt, characteristic, status);
 			 Log.w(TAG, "--onCharacteristicWrite--: " + status);
-			 //ÒÔÏÂÓï¾äÊµÏÖ ·¢ËÍÍêÊý¾Ý»òÒ²ÏÔÊ¾µ½½çÃæÉÏ
+			 //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ý»ï¿½Ò²ï¿½ï¿½Ê¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 			// broadcastUpdate(ACTION_DATA_AVAILABLE, characteristic);
 		}
 
@@ -177,7 +175,7 @@ public class BluetoothLeService extends Service {
         final Intent intent = new Intent(action);
         sendBroadcast(intent);
     }
-     /*¹ã²¥Ô¶³Ì·¢ËÍ¹ýÀ´µÄÊý¾Ý*/
+     /*ï¿½ã²¥Ô¶ï¿½Ì·ï¿½ï¿½Í¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
     public  void broadcastUpdate(final String action,
                                  final BluetoothGattCharacteristic characteristic) {
         final Intent intent = new Intent(action);
@@ -221,7 +219,7 @@ public class BluetoothLeService extends Service {
      * 
      * @return Return true if the initialization is successful.
      */
-    /*service ÖÐÀ¶ÑÀ³õÊ¼»¯*/
+    /*service ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¼ï¿½ï¿½*/
     public boolean initialize() {
         // For API level 18 and above, get a reference to BluetoothAdapter through
         // BluetoothManager.
@@ -251,7 +249,7 @@ public class BluetoothLeService extends Service {
      *         {@code BluetoothGattCallback#onConnectionStateChange(android.bluetooth.BluetoothGatt, int, int)}
      *         callback.
      */
-    //Á¬½ÓÔ¶³ÌÀ¶ÑÀ
+    //ï¿½ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     public boolean connect(final String address) {
         if (mBluetoothAdapter == null || address == null) {
             Log.w(TAG, "BluetoothAdapter not initialized or unspecified address.");
@@ -269,7 +267,7 @@ public class BluetoothLeService extends Service {
                 return false;
             }
         }
-          /*»ñÈ¡Ô¶¶ËµÄÀ¶ÑÀÉè±¸*/
+          /*ï¿½ï¿½È¡Ô¶ï¿½Ëµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½è±¸*/
         final BluetoothDevice device = mBluetoothAdapter.getRemoteDevice(address);
         if (device == null) {
             Log.w(TAG, "Device not found.  Unable to connect.");
@@ -277,7 +275,7 @@ public class BluetoothLeService extends Service {
         }
         // We want to directly connect to the device, so we are setting the autoConnect
         // parameter to false.
-        /*µ÷ÓÃdeviceÖÐµÄconnectGattÁ¬½Óµ½Ô¶³ÌÉè±¸*/
+        /*ï¿½ï¿½ï¿½ï¿½deviceï¿½Ðµï¿½connectGattï¿½ï¿½ï¿½Óµï¿½Ô¶ï¿½ï¿½ï¿½è±¸*/
         mBluetoothGatt = device.connectGatt(this, false, mGattCallback);
         Log.d(TAG, "Trying to create a new connection.");
         mBluetoothDeviceAddress = address;
@@ -329,7 +327,7 @@ public class BluetoothLeService extends Service {
         
     }
     
-    //Ð´ÈëÌØÕ÷Öµ
+    //Ð´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµ
     public void writeCharacteristic(BluetoothGattCharacteristic characteristic) {
     	if (mBluetoothAdapter == null || mBluetoothGatt == null) {
             Log.w(TAG, "BluetoothAdapter not initialized");
@@ -339,7 +337,7 @@ public class BluetoothLeService extends Service {
     	
     }
     
-    //¶ÁÈ¡RSSi
+    //ï¿½ï¿½È¡RSSi
     public void readRssi()
     {
     	if (mBluetoothAdapter == null || mBluetoothGatt == null) {

@@ -29,6 +29,7 @@ int id TextView_fg 0x7f050000
 int id action_settings 0x7f050001
 int id band_spinner 0x7f050002
 int id btClear 0x7f050003
+int id btEnviarAPI 0x7f050022
 int id button_read_6c 0x7f050004
 int id button_scanrr9 0x7f050005
 int id button_write_6c 0x7f050006

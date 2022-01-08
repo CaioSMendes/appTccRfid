@@ -63,11 +63,9 @@ public class ReadWActivity extends Activity implements OnClickListener, OnItemSe
 	private static final int MSG_UPDATE_DATA = 0;
     private static final int MSG_UPDATE_WRITE = 1;
     private Handler myHandler = new Handler() {  
-        //2.重写消息处理函数
-        public void handleMessage(Message msg) {   
+        public void handleMessage(Message msg) {
              switch (msg.what) {   
-                  //判断发送的消息
-                  case MSG_UPDATE_DATA:   
+                  case MSG_UPDATE_DATA:
                   {
                 	  content.setText(str_update);
                      break;   
@@ -76,10 +74,10 @@ public class ReadWActivity extends Activity implements OnClickListener, OnItemSe
                   {
                 	  if(str_update=="00")
                 	  {
-                		  Toast.makeText(ReadWActivity.this, "成功！", Toast.LENGTH_SHORT).show();
+                		  Toast.makeText(ReadWActivity.this, "锟缴癸拷锟斤拷", Toast.LENGTH_SHORT).show();
                 	  }else
                 	  {
-                		  Toast.makeText(ReadWActivity.this, "失败！", Toast.LENGTH_SHORT).show();
+                		  Toast.makeText(ReadWActivity.this, "失锟杰ｏ拷", Toast.LENGTH_SHORT).show();
                 	  }
                       break;   
                   }  

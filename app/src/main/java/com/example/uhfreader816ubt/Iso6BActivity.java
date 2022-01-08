@@ -39,10 +39,9 @@ private Spinner tvpowerdBm;
     private static final int MSG_SHOW_PROPERTIES=3;
     public String str_update="";
     public Handler myHandler = new Handler() {  
-        //2.ÖØÐ´ÏûÏ¢´¦Àíº¯Êý
+
         public void handleMessage(Message msg) {   
              switch (msg.what) {   
-                  //ÅÐ¶Ï·¢ËÍµÄÏûÏ¢
 	              case MSG_UPDATE_UID:
 	              {
 	            	 break;
@@ -73,7 +72,7 @@ private Spinner tvpowerdBm;
 		adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		tvpowerdBm.setAdapter(adapter3); 
 		tvpowerdBm.setSelection(26, true);
-	    ////////////Æµ¶ÎÑ¡Ôñ
+	    ////////////Æµï¿½ï¿½Ñ¡ï¿½ï¿½
 		strBand[0]="Chinese band2";
 		strBand[1]="US band";
 		strBand[2]="Korean band";
@@ -85,20 +84,20 @@ private Spinner tvpowerdBm;
 		spada_Band.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);  
 		spBand.setAdapter(spada_Band);  
 		spBand.setSelection(0,false); 
-		SetFre(1);////³õÊ¼»¯Æµµã
-		 // Ìí¼ÓSpinnerÊÂ¼þ¼àÌý  
+		SetFre(1);////ï¿½ï¿½Ê¼ï¿½ï¿½Æµï¿½ï¿½
+		 // ï¿½ï¿½ï¿½Spinnerï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½  
 		spBand.setOnItemSelectedListener(new Spinner.OnItemSelectedListener() {  
 	    public void onItemSelected(AdapterView<?> arg0, View arg1,  
 	            int arg2, long arg3) {  
 	        // TODO Auto-generated method stub  
-	        // ÉèÖÃÏÔÊ¾µ±Ç°Ñ¡ÔñµÄÏî  
+	        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½Ç°Ñ¡ï¿½ï¿½ï¿½ï¿½ï¿½  
 	        arg0.setVisibility(View.VISIBLE);  
 	        if(arg2==0)SetFre(1);
 	        if(arg2==1)SetFre(2);
 	        if(arg2==2)SetFre(3);
 	        if(arg2==3)SetFre(4);
 	        if(arg2==4)SetFre(8);
-	        //Ñ¡ÔñÄ¬ÈÏÖµ²»ÈÃÖ´ÐÐ  
+	        //Ñ¡ï¿½ï¿½Ä¬ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½Ö´ï¿½ï¿½  
 	    }  
 	    public void onNothingSelected(AdapterView<?> arg0) {  
 	        // TODO Auto-generated method stub  

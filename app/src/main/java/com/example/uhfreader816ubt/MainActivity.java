@@ -58,11 +58,10 @@ public class MainActivity extends Activity implements OnClickListener{
     public Object obtstr;
     public static MyService mys=new MyService();
     //public BluetoothGattCharacteristic target_chara2=null;
-    private Handler myHandler = new Handler() {  
-        //2.ÖØÐ´ÏûÏ¢´¦Àíº¯Êý
+    private Handler myHandler = new Handler() {
         public void handleMessage(Message msg) {   
              switch (msg.what) {   
-                  //ÅÐ¶Ï·¢ËÍµÄÏûÏ¢
+
 	              case 0:
 	              {
 	            	  mleDeviceListAdapter.clear();
@@ -111,7 +110,7 @@ public class MainActivity extends Activity implements OnClickListener{
 		scan_flag=true;
 	    mleDeviceListAdapter=new LeDeviceListAdapter();
 		lv.setAdapter(mleDeviceListAdapter); 
-		/*listviewµã»÷º¯Êý*/
+		/*listviewï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 		lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 			@Override
 			public void onItemClick(AdapterView<?> arg0,  View v, int position, long id) {
@@ -122,7 +121,7 @@ public class MainActivity extends Activity implements OnClickListener{
 		        if (MyService.mScanning){
 		        	 stopdiscover=false;
 					 scanLeDevice(false);
-					 scan_btn.setText("Éè±¸ËÑË÷");
+					 scan_btn.setText("ï¿½è±¸ï¿½ï¿½ï¿½ï¿½");
 					 scan_flag=true;
 		        }
 		        mys.ConnectBT(mDeviceAddress);
@@ -171,21 +170,21 @@ public class MainActivity extends Activity implements OnClickListener{
 	
 	private void init_ble()
 	{
-		//ÊÖ»úÓ²¼þÖ§³ÖÀ¶ÑÀ
+		//ï¿½Ö»ï¿½Ó²ï¿½ï¿½Ö§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		if (!getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH_LE)) {
 		    Toast.makeText(this, "Not support BLE", Toast.LENGTH_SHORT).show();
 		    finish();
 		}
 		
 		// Initializes Bluetooth adapter.
-		//»ñÈ¡ÊÖ»ú±¾µØµÄÀ¶ÑÀÊÊÅäÆ÷
+		//ï¿½ï¿½È¡ï¿½Ö»ï¿½ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		final BluetoothManager bluetoothManager =
 		        (BluetoothManager) getSystemService(Context.BLUETOOTH_SERVICE);
 		mys.mBluetoothAdapter = bluetoothManager.getAdapter();
 		
 		// Ensures Bluetooth is available on the device and it is enabled. If not,
 		// displays a dialog requesting user permission to enable Bluetooth.
-		//´ò¿ªÀ¶ÑÀÈ¨ÏÞ
+		//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¨ï¿½ï¿½
 		if (mys.mBluetoothAdapter == null || !mys.mBluetoothAdapter.isEnabled()) {
 		    Intent enableBtIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
 		    startActivityForResult(enableBtIntent, REQUEST_ENABLE_BT);
@@ -232,12 +231,12 @@ public class MainActivity extends Activity implements OnClickListener{
 				 stopdiscover=false;
 				 connect_state.setText("disconnected");
 				 scanLeDevice(false);
-				 scan_btn.setText("Éè±¸ËÑË÷");
+				 scan_btn.setText("ï¿½è±¸ï¿½ï¿½ï¿½ï¿½");
 			 }
 		}
 	}  
 	
-	/*É¨ÃèÀ¶ÑÀÉè±¸      */
+	/*É¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½è±¸      */
 	private void scanLeDevice(final boolean enable) {
         mys.ScanBtDevice(enable);
     }

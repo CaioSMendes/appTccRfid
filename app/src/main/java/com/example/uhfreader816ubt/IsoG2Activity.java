@@ -7,6 +7,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import com.example.uhfreader816ubt.R;
 
@@ -31,6 +33,7 @@ import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.Toast;
 
 public class IsoG2Activity extends Activity implements OnClickListener, OnItemClickListener{
 	private String mode;
@@ -38,9 +41,10 @@ public class IsoG2Activity extends Activity implements OnClickListener, OnItemCl
 	
 	Button scan;
 	Button bclear;
+	Button enviar;
 	ListView listView;
 	TextView txNum;
-	static Map<String, Integer> scanResult = new HashMap<String, Integer>();
+	static Map<String, Integer> scanResult = new HashMap<String, Integer>(); // aqui ta chave valor
 	static Map<String, byte[]> epcBytes = new HashMap<String, byte[]>();
 	public static Timer timer;
 	private MyAdapter myAdapter;
@@ -54,6 +58,8 @@ public class IsoG2Activity extends Activity implements OnClickListener, OnItemCl
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_g2);
+		enviar = (Button)findViewById(R.id.btEnviarAPI);
+		enviar.setOnClickListener(this);
 		scan = (Button)findViewById(R.id.button_scanrr9);
 		scan.setOnClickListener(this);
 		bclear = (Button)findViewById(R.id.btClear);
@@ -203,7 +209,7 @@ class MyAdapter extends BaseAdapter{
 				if(timer != null){
 					timer.cancel();
 					timer = null;
-					scan.setText("Ñ¯²é±êÇ©");
+					scan.setText("Ñ¯ï¿½ï¿½ï¿½Ç©");
 				}
 				isCanceled =false;
 			}
@@ -218,14 +224,20 @@ class MyAdapter extends BaseAdapter{
 			}
 			txNum.setText("0");
 		}
-	}
+		////////////////////////////////////////////////////////////////////////////////
+		else if(enviar == arg0) { // Chamando botÃ£o d eenviar API
+			JSONObject json =  new JSONObject(scanResult);
+			System.out.printf( "JSON: %s", json); // PEGA TODA STRING E MANADA EM JSON
+			Toast.makeText(this, "Entrou", Toast.LENGTH_SHORT).show();
+		}
+	}	////////////////////////////////////////////////////////////////////////////////
 	private void cancelScan(){
 		isCanceled = true;
 		mHandler.removeMessages(MSG_UPDATE_LISTVIEW);
 		if(timer != null){
 			timer.cancel();
 			timer = null;
-			scan.setText("Ñ¯²é±êÇ©");
+			scan.setText("Ñ¯ï¿½ï¿½ï¿½Ç©");
 			scanResult.clear();
 			if (myAdapter != null) {
 				myAdapter.mList.clear();

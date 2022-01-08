@@ -25,11 +25,6 @@ public class BTClient {
 		 return DeviceName;
 	 }
 
-	 //Len£º2¸ö×Ö½Ú£¬¸ß×Ö½ÚÔÚÇ°£¬°ü³¤¶È£¬°üÀ¨Len±¾Éí¡£¼´°ü³¤¶ÈµÈÓÚ5+m+n¡£
-	 //Cmd£º1¸ö×Ö½Ú£¬ÃüÁî´úÂë¡£ÓÃÓÚÍ¨ÖªÀ¶ÑÀÖúÊÖÍ¸´«ÃüÁîÖ¡Frame[]Ç°ÐèÒª½øÐÐµÄ²Ù×÷¡£
-	 //Data[]£ºm¸ö×Ö½Ú£¬¶ÔÓ¦ÓÚCmdÃüÁîÂëµÄ²Ù×÷Êý¾Ý¡£
-	 //Frame[]£ºn¸ö×Ö½Ú£¬Òª·¢ËÍ¸ø¶ÁÐ´Æ÷µÄÍêÕûµÄÃüÁîÖ¡¡£¸Ã²¿·ÖÊý¾Ý½«Ö±½ÓÍ¸´«¸ø¶ÁÐ´Æ÷£¬Òò´ËÒª±£Ö¤Êý¾Ý¸ñÊ½ºÍÄÚÈÝµÄÕýÈ·¡£
-	 //CRC-16£º2¸ö×Ö½Ú£¬µÍ×Ö½ÚÔÚÇ°¡£CRC16ÊÇ´ÓLenµ½Frame []µÄCRC16Öµ¡£
 	 
 	 public static String init_com(byte Baudrate,byte Parity)
 	 {
@@ -387,11 +382,11 @@ public class BTClient {
 				   byte[]btArBuff=new byte[5000];
 				   memcpy(buffer,0,RecvBuff,0,recvLen);
 				   int btLen=recvLen;
-					//////ÒÔÏÂ´¦Àí½ÓÊÕµ½µÄÊý¾Ý
+					//////ï¿½ï¿½ï¿½Â´ï¿½ï¿½ï¿½ï¿½ï¿½Õµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 					while (btLen>0)
 					{
 						int len=(btArBuff[0]&255)+1;
-						if(btLen<len)//Î´´¦ÀíµÄÊý¾ÝÉÙÓÚÒ»¸öÖ¡³¤¶È£¬ÍË³ö£¬¼ÌÐø½ÓÊÜ
+						if(btLen<len)//Î´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ö¡ï¿½ï¿½ï¿½È£ï¿½ï¿½Ë³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 						{
 							break;
 						}
@@ -400,11 +395,11 @@ public class BTClient {
 							if(CheckCRC(btArBuff,btLen))
 							{
 								if(((btArBuff[3]==0x01)||(btArBuff[3]==0x02)||(btArBuff[3]==0xFB)||(btArBuff[3]==0xF8)||(btArBuff[3]==0xF9)||(btArBuff[3]==0xFD)||(btArBuff[3]==0xFE)||(btArBuff[3]==0xFF)))
-								{//½áÊøÖ¡
+								{//ï¿½ï¿½ï¿½ï¿½Ö¡
 									return 0;
 								}
 								else
-								{//·Ç½áÊøÖ¡
+								{//ï¿½Ç½ï¿½ï¿½ï¿½Ö¡
 									btLen=btLen-len;
 									byte[] data =new byte[5000];
 									memcpy(btArBuff,len,data,0,btLen);

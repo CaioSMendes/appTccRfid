@@ -30,6 +30,7 @@ id TextView_fg
 id action_settings
 id band_spinner
 id btClear
+id btEnviarAPI
 id button_read_6c
 id button_scanrr9
 id button_write_6c
