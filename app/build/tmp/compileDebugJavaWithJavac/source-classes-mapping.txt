@@ -1,0 +1,51 @@
+com/example/uhfreader816ubt/BTClient.java
+ com.example.uhfreader816ubt.BTClient
+com/example/uhfreader816ubt/MyService.java
+ com.example.uhfreader816ubt.MyService
+ com.example.uhfreader816ubt.MyService$1
+ com.example.uhfreader816ubt.MyService$2
+ com.example.uhfreader816ubt.MyService$3
+ com.example.uhfreader816ubt.MyService$4
+ com.example.uhfreader816ubt.MyService$LocalBinder
+com/example/uhfreader816ubt/ReadWActivity.java
+ com.example.uhfreader816ubt.ReadWActivity
+ com.example.uhfreader816ubt.ReadWActivity$1
+ com.example.uhfreader816ubt.ReadWActivity$2
+ com.example.uhfreader816ubt.ReadWActivity$3
+com/example/uhfreader816ubt/BluetoothLeService.java
+ com.example.uhfreader816ubt.BluetoothLeService
+ com.example.uhfreader816ubt.BluetoothLeService$1
+ com.example.uhfreader816ubt.BluetoothLeService$LocalBinder
+ com.example.uhfreader816ubt.BluetoothLeService$OnDataAvailableListener
+com/example/uhfreader816ubt/BuildConfig.java
+ com.example.uhfreader816ubt.BuildConfig
+com/example/uhfreader816ubt/IsoG2Activity.java
+ com.example.uhfreader816ubt.IsoG2Activity
+ com.example.uhfreader816ubt.IsoG2Activity$1
+ com.example.uhfreader816ubt.IsoG2Activity$2
+ com.example.uhfreader816ubt.IsoG2Activity$MyAdapter
+ com.example.uhfreader816ubt.IsoG2Activity$MyAdapter$ItemView
+com/example/uhfreader816ubt/MainActivity.java
+ com.example.uhfreader816ubt.MainActivity
+ com.example.uhfreader816ubt.MainActivity$1
+ com.example.uhfreader816ubt.MainActivity$2
+ com.example.uhfreader816ubt.MainActivity$2$1
+ com.example.uhfreader816ubt.MainActivity$3
+ com.example.uhfreader816ubt.MainActivity$LeDeviceListAdapter
+com/example/uhfreader816ubt/Iso6BActivity.java
+ com.example.uhfreader816ubt.Iso6BActivity
+ com.example.uhfreader816ubt.Iso6BActivity$1
+ com.example.uhfreader816ubt.Iso6BActivity$2
+ com.example.uhfreader816ubt.Iso6BActivity$3
+ com.example.uhfreader816ubt.Iso6BActivity$3$1
+ com.example.uhfreader816ubt.Iso6BActivity$3$2
+ com.example.uhfreader816ubt.Iso6BActivity$4
+com/example/uhfreader816ubt/ScanModeGroup.java
+ com.example.uhfreader816ubt.ScanModeGroup
+com/example/uhfreader816ubt/TabsActivity.java
+ com.example.uhfreader816ubt.TabsActivity
+com/example/uhfreader816ubt/GetActive.java
+ com.example.uhfreader816ubt.GetActive
+ com.example.uhfreader816ubt.GetActive$1
+ com.example.uhfreader816ubt.GetActive$2
+ com.example.uhfreader816ubt.GetActive$ListAdapter

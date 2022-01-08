@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Fre_select">
+        <item>902.75 MHz</item>
+        <item>903.25 MHz</item>
+        <item>903.75 MHz</item>
+        <item>904.25 MHz</item>
+        <item>904.75 MHz</item>
+        <item>905.25 MHz</item>
+        <item>905.75 MHz</item>
+        <item>906.25 MHz</item>
+        <item>906.75 MHz</item>
+        <item>907.25 MHz</item>
+        <item>907.75 MHz</item>
+        <item>908.25 MHz</item>
+        <item>908.75 MHz</item>
+        <item>909.25 MHz</item>
+        <item>909.75 MHz</item>
+        <item>910.25 MHz</item>
+        <item>910.75 MHz</item>
+        <item>911.25 MHz</item>
+        <item>911.75 MHz</item>
+        <item>912.25 MHz</item>
+        <item>912.75 MHz</item>
+        <item>913.25 MHz</item>
+        <item>913.75 MHz</item>
+        <item>914.25 MHz</item>
+        <item>914.75 MHz</item>
+        <item>915.25 MHz</item>
+        <item>915.75 MHz</item>
+        <item>916.25 MHz</item>
+        <item>916.75 MHz</item>
+        <item>917.25 MHz</item>
+        <item>917.75 MHz</item>
+        <item>918.25 MHz</item>
+        <item>918.75 MHz</item>
+        <item>919.25 MHz</item>
+        <item>919.75 MHz</item>
+        <item>920.25 MHz</item>
+        <item>920.75 MHz</item>
+        <item>921.25 MHz</item>
+        <item>921.75 MHz</item>
+        <item>922.25 MHz</item>
+        <item>922.75 MHz</item>
+        <item>923.25 MHz</item>
+        <item>923.75 MHz</item>
+        <item>924.25 MHz</item>
+        <item>924.75 MHz</item>
+        <item>925.25 MHz</item>
+        <item>925.75 MHz</item>
+        <item>926.25 MHz</item>
+        <item>926.75 MHz</item>
+        <item>927.25 MHz</item>
+    </string-array>
+    <string-array name="Power_select">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+    </string-array>
+    <string-array name="men_select">
+        <item>保留区</item>
+        <item>EPC区</item>
+        <item>TID区</item>
+        <item>用户区</item>
+    </string-array>
+    <color name="divide">#000000</color>
+    <color name="epc_selected">#11000000</color>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="button_height">40dp</dimen>
+    <dimen name="button_width">80dp</dimen>
+    <dimen name="lable_num_width">40dp</dimen>
+    <dimen name="lable_width">260dp</dimen>
+    <dimen name="list_devide">1dp</dimen>
+    <dimen name="list_height">250dp</dimen>
+    <dimen name="list_width">304dp</dimen>
+    <dimen name="rm_6c_et_height">40dp</dimen>
+    <drawable name="black">#000</drawable>
+    <drawable name="blue">#00ffff</drawable>
+    <drawable name="cyan">#66ffffff</drawable>
+    <drawable name="darkgray">#404040ff</drawable>
+    <drawable name="gray">#808080ff</drawable>
+    <drawable name="green">#0ff0ff</drawable>
+    <drawable name="lightgray">#c0c0c0ff</drawable>
+    <drawable name="magenta">#ff6699ff</drawable>
+    <drawable name="red">#ff00ff</drawable>
+    <drawable name="white">#ffffffff</drawable>
+    <drawable name="yellow">#ffFF33ff</drawable>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">UHFReader816UBT</string>
+    <string name="band">频段:</string>
+    <string name="dmax">最大频点:</string>
+    <string name="dmin">最小频点:</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="power">功率:</string>
+    <string name="title_activity_get_active">GetActive</string>
+    <string name="title_activity_iso14443_a">Iso14443AActivity</string>
+    <string name="title_activity_iso15693">Iso15693Activity</string>
+    <string name="title_activity_read_w">ReadWActivity</string>
+    <string name="title_activity_scan_mode_group">ScanModeGroup</string>
+    <string name="title_activity_tab">TabActivity</string>
+    <string name="title_activity_tabs">TabsActivity</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+</resources>

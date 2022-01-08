@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res"/><source path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/build/generated/res/rs/debug"/><source path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res"><file path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res/values-v11/styles.xml" qualifiers="v11"><style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        
+    </style></file><file path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res/values-sw720dp-land/dimens.xml" qualifiers="sw720dp-land-v13"><dimen name="activity_horizontal_margin">128dp</dimen></file><file name="get_active" path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res/layout/get_active.xml" qualifiers="" type="layout"/><file name="list" path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res/layout/list.xml" qualifiers="" type="layout"/><file name="listgl" path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res/layout/listgl.xml" qualifiers="" type="layout"/><file name="activity_6b" path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res/layout/activity_6b.xml" qualifiers="" type="layout"/><file name="activity_main" path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res/layout/activity_main.xml" qualifiers="" type="layout"/><file name="activity_g2" path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res/layout/activity_g2.xml" qualifiers="" type="layout"/><file name="activity_tabs" path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res/layout/activity_tabs.xml" qualifiers="" type="layout"/><file name="listitem" path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res/layout/listitem.xml" qualifiers="" type="layout"/><file name="activity_readw" path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res/layout/activity_readw.xml" qualifiers="" type="layout"/><file path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res/values-sw600dp/dimens.xml" qualifiers="sw600dp-v13"/><file path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res/values/dimens.xml" qualifiers=""><dimen name="activity_horizontal_margin">16dp</dimen><dimen name="activity_vertical_margin">16dp</dimen><dimen name="list_width">304dp</dimen><dimen name="list_height">250dp</dimen><dimen name="lable_width">260dp</dimen><dimen name="lable_num_width">40dp</dimen><dimen name="list_devide">1dp</dimen><dimen name="button_height">40dp</dimen><dimen name="button_width">80dp</dimen><dimen name="rm_6c_et_height">40dp</dimen></file><file path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res/values/styles.xml" qualifiers=""><style name="AppBaseTheme" parent="android:Theme.Light">
+        
+    </style><style name="AppTheme" parent="AppBaseTheme">
+        
+    </style></file><file path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res/values/strings.xml" qualifiers=""><string name="app_name">UHFReader816UBT</string><string name="action_settings">Settings</string><string name="hello_world">Hello world!</string><string name="title_activity_tab">TabActivity</string><string name="title_activity_iso15693">Iso15693Activity</string><string name="title_activity_iso14443_a">Iso14443AActivity</string><string name="title_activity_tabs">TabsActivity</string><string name="title_activity_read_w">ReadWActivity</string><string name="title_activity_get_active">GetActive</string><string name="dmin">最小频点:</string><string name="band">频段:</string><string name="dmax">最大频点:</string><string name="power">功率:</string><string-array name="men_select">
+        <item>保留区</item>
+        <item>EPC区</item>
+        <item>TID区</item>
+        <item>用户区</item>
+    </string-array><string-array name="Fre_select">
+        <item>902.75 MHz</item>
+        <item>903.25 MHz</item>
+        <item>903.75 MHz</item>
+        <item>904.25 MHz</item>
+        <item>904.75 MHz</item>
+        <item>905.25 MHz</item>
+        <item>905.75 MHz</item>
+        <item>906.25 MHz</item>
+        <item>906.75 MHz</item>
+        <item>907.25 MHz</item>
+        <item>907.75 MHz</item>
+        <item>908.25 MHz</item>
+        <item>908.75 MHz</item>
+        <item>909.25 MHz</item>
+        <item>909.75 MHz</item>
+        <item>910.25 MHz</item>
+        <item>910.75 MHz</item>
+        <item>911.25 MHz</item>
+        <item>911.75 MHz</item>
+        <item>912.25 MHz</item>
+        <item>912.75 MHz</item>
+        <item>913.25 MHz</item>
+        <item>913.75 MHz</item>
+        <item>914.25 MHz</item>
+        <item>914.75 MHz</item>
+        <item>915.25 MHz</item>
+        <item>915.75 MHz</item>
+        <item>916.25 MHz</item>
+        <item>916.75 MHz</item>
+        <item>917.25 MHz</item>
+        <item>917.75 MHz</item>
+        <item>918.25 MHz</item>
+        <item>918.75 MHz</item>
+        <item>919.25 MHz</item>
+        <item>919.75 MHz</item>
+        <item>920.25 MHz</item>
+        <item>920.75 MHz</item>
+        <item>921.25 MHz</item>
+        <item>921.75 MHz</item>
+        <item>922.25 MHz</item>
+        <item>922.75 MHz</item>
+        <item>923.25 MHz</item>
+        <item>923.75 MHz</item>
+        <item>924.25 MHz</item>
+        <item>924.75 MHz</item>
+        <item>925.25 MHz</item>
+        <item>925.75 MHz</item>
+        <item>926.25 MHz</item>
+        <item>926.75 MHz</item>
+        <item>927.25 MHz</item>
+    </string-array><string-array name="Power_select">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+    </string-array><string name="title_activity_scan_mode_group">ScanModeGroup</string></file><file path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res/values/color.xml" qualifiers=""><drawable name="darkgray">#404040ff</drawable><drawable name="black">#000</drawable><drawable name="red">#ff00ff</drawable><drawable name="green">#0ff0ff</drawable><drawable name="lightgray">#c0c0c0ff</drawable><drawable name="white">#ffffffff</drawable><drawable name="yellow">#ffFF33ff</drawable><drawable name="blue">#00ffff</drawable><drawable name="gray">#808080ff</drawable><drawable name="magenta">#ff6699ff</drawable><drawable name="cyan">#66ffffff</drawable><color name="divide">#000000</color><color name="epc_selected">#11000000</color></file><file name="ic_launcher" path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res/drawable-xhdpi/ic_launcher.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ic_launcher" path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res/drawable-xxhdpi/ic_launcher.png" qualifiers="xxhdpi-v4" type="drawable"/><file path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res/values-v14/styles.xml" qualifiers="v14"><style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        
+    </style></file><file name="ic_launcher" path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res/drawable-hdpi/ic_launcher.png" qualifiers="hdpi-v4" type="drawable"/><file name="tabs" path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res/menu/tabs.xml" qualifiers="" type="menu"/><file name="main" path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res/menu/main.xml" qualifiers="" type="menu"/><file name="read_w" path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res/menu/read_w.xml" qualifiers="" type="menu"/><file name="get_active" path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res/menu/get_active.xml" qualifiers="" type="menu"/><file name="tab" path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res/menu/tab.xml" qualifiers="" type="menu"/><file name="iso15693" path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res/menu/iso15693.xml" qualifiers="" type="menu"/><file name="scan_mode_group" path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res/menu/scan_mode_group.xml" qualifiers="" type="menu"/><file name="iso14443_a" path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res/menu/iso14443_a.xml" qualifiers="" type="menu"/><file name="ic_launcher" path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/res/drawable-mdpi/ic_launcher.png" qualifiers="mdpi-v4" type="drawable"/></source><source path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/build/generated/res/rs/debug"/><source path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/build/generated/res/resValues/debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/debug/res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/debug/res"/></dataSet><mergedItems/></merger>
