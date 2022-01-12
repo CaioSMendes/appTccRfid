@@ -1,5 +1,7 @@
 package com.example.uhfreader816ubt;
 
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
@@ -7,11 +9,21 @@ import java.util.List;
 import java.util.Map;
 import java.util.Timer;
 import java.util.TimerTask;
+
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
 import com.example.uhfreader816ubt.R;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -35,10 +47,14 @@ import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Toast;
 
+import okhttp3.MediaType;
+import okhttp3.OkHttpClient;
+import okhttp3.RequestBody;
+
 public class IsoG2Activity extends Activity implements OnClickListener, OnItemClickListener{
 	private String mode;
 	private Map<String,Integer> data;
-	
+	RequestQueue requestQueue;
 	Button scan;
 	Button bclear;
 	Button enviar;
@@ -91,8 +107,8 @@ public class IsoG2Activity extends Activity implements OnClickListener, OnItemCl
 				super.handleMessage(msg);
 			}
 		};
-		
-		
+
+
 	}
     @Override
 	protected void onResume() {
@@ -209,7 +225,7 @@ class MyAdapter extends BaseAdapter{
 				if(timer != null){
 					timer.cancel();
 					timer = null;
-					scan.setText("ѯ���ǩ");
+					scan.setText("Buscar");
 				}
 				isCanceled =false;
 			}
@@ -225,19 +241,50 @@ class MyAdapter extends BaseAdapter{
 			txNum.setText("0");
 		}
 		////////////////////////////////////////////////////////////////////////////////
-		else if(enviar == arg0) { // Chamando botão d eenviar API
+		// PEGA A STRING DE TODAS AS TAGS E TRANSFORMA EM JSON
+		else if(enviar == arg0) { // Chamando botão de enviar para API
 			JSONObject json =  new JSONObject(scanResult);
 			System.out.printf( "JSON: %s", json); // PEGA TODA STRING E MANADA EM JSON
 			Toast.makeText(this, "Entrou", Toast.LENGTH_SHORT).show();
+			mandaPostApi("Teste parametro");//AQUI mandar as requisicoes para API
 		}
-	}	////////////////////////////////////////////////////////////////////////////////
+		////////////////////////////////////////////////////////////////////////////////
+	}
+	////////////////////////////// TRECHO REQUEST POST API ////////////////////////////
+	private void mandaPostApi(String code) {
+		String url = "https://upc-rfid-api-unb.herokuapp.com/bluetoothsearches";
+		JSONObject paramsApi = new JSONObject();
+		try {
+			paramsApi.put("rfidCode", code);
+		} catch (JSONException e){
+			e.printStackTrace();
+		}
+		JsonObjectRequest request=new JsonObjectRequest(Request.Method.POST, url, paramsApi, new Response.Listener<JSONObject>() {
+			@Override
+			public void onResponse(JSONObject response) {
+				System.out.printf("Response", ""+response);
+
+			}
+		}, new Response.ErrorListener() {
+			@Override
+			public void onErrorResponse(VolleyError error) {
+				System.out.printf("Error", error.getMessage());
+
+			}
+		}) ;
+
+		requestQueue = Volley.newRequestQueue(this);
+		requestQueue.add(request);
+	}
+	////////////////////////////////////////////////////////////////////////////////////
+
 	private void cancelScan(){
 		isCanceled = true;
 		mHandler.removeMessages(MSG_UPDATE_LISTVIEW);
 		if(timer != null){
 			timer.cancel();
 			timer = null;
-			scan.setText("ѯ���ǩ");
+			scan.setText("Parar");
 			scanResult.clear();
 			if (myAdapter != null) {
 				myAdapter.mList.clear();

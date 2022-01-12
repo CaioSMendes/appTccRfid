@@ -37,12 +37,12 @@
 	            android:layout_width="@dimen/list_devide"
 	            android:layout_height="fill_parent"
 	            android:background="@color/divide" />
-	        
-	        <TextView
-	            android:layout_width="@dimen/lable_num_width"
-	            android:layout_height="wrap_content"
-	            android:gravity="center"
-	            android:text="Times" />
+
+			<TextView
+				android:layout_width="@dimen/lable_num_width"
+				android:layout_height="match_parent"
+				android:gravity="center"
+				android:text="Times" />
 	        
 	        <TextView
 	            android:layout_width="@dimen/list_devide"
@@ -96,14 +96,14 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true">
-        
-        <TextView
-            android:id="@+id/num"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
-            android:text="数量:" />
+
+			<TextView
+				android:id="@+id/num"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+				android:layout_centerVertical="true"
+				android:text="Qtd:" />
 
         <TextView 
             android:id="@+id/tx_numrr9"

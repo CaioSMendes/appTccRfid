@@ -47,5 +47,7 @@ com/example/uhfreader816ubt/IsoG2Activity.java
  com.example.uhfreader816ubt.IsoG2Activity
  com.example.uhfreader816ubt.IsoG2Activity$1
  com.example.uhfreader816ubt.IsoG2Activity$2
+ com.example.uhfreader816ubt.IsoG2Activity$3
+ com.example.uhfreader816ubt.IsoG2Activity$4
  com.example.uhfreader816ubt.IsoG2Activity$MyAdapter
  com.example.uhfreader816ubt.IsoG2Activity$MyAdapter$ItemView

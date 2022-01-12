@@ -5,6 +5,7 @@ INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/And
 INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:2:1-108:12
 INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:2:1-108:12
 MERGED from [com.android.support:support-v4:21.0.3] /Users/caiomendes/.gradle/caches/transforms-3/e718bb9bddc77d00a0b15137ecc9c985/transformed/support-v4-21.0.3/AndroidManifest.xml:14:4-17:12
+MERGED from [com.android.volley:volley:1.2.1] /Users/caiomendes/.gradle/caches/transforms-3/83b085bf5ac15b844df7a4b3f10d7d50/transformed/volley-1.2.1/AndroidManifest.xml:2:1-7:12
 INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:2:1-108:12
 INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:2:1-108:12
 INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:2:1-108:12
@@ -108,6 +109,8 @@ INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/And
 INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:49:5-51:41
 MERGED from [com.android.support:support-v4:21.0.3] /Users/caiomendes/.gradle/caches/transforms-3/e718bb9bddc77d00a0b15137ecc9c985/transformed/support-v4-21.0.3/AndroidManifest.xml:15:5-42
 MERGED from [com.android.support:support-v4:21.0.3] /Users/caiomendes/.gradle/caches/transforms-3/e718bb9bddc77d00a0b15137ecc9c985/transformed/support-v4-21.0.3/AndroidManifest.xml:15:5-42
+MERGED from [com.android.volley:volley:1.2.1] /Users/caiomendes/.gradle/caches/transforms-3/83b085bf5ac15b844df7a4b3f10d7d50/transformed/volley-1.2.1/AndroidManifest.xml:5:5-43
+MERGED from [com.android.volley:volley:1.2.1] /Users/caiomendes/.gradle/caches/transforms-3/83b085bf5ac15b844df7a4b3f10d7d50/transformed/volley-1.2.1/AndroidManifest.xml:5:5-43
 INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:49:5-51:41
 INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:49:5-51:41
 	android:targetSdkVersion
