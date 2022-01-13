@@ -247,16 +247,12 @@ class MyAdapter extends BaseAdapter{
 		else if(enviar == arg0) { // Chamando botão de enviar para API
 			JSONObject json =  new JSONObject(scanResult);
 			System.out.printf( "JSON: %s", json); // PEGA TODA STRING E MANADA EM JSON
-			Toast.makeText(this, "Enviado", Toast.LENGTH_SHORT).show();
-			//mandaPostApi("Teste parametro");//AQUI mandar as requisicoes para API
 			mandaPostApi(scanResult);//AQUI mandar as requisicoes para API
-			//Map<String, Integer> scanResult
 		}
 		////////////////////////////////////////////////////////////////////////////////
 	}
 	////////////////////////////// TRECHO REQUEST POST API ////////////////////////////
 	private void mandaPostApi(Map<String, Integer> scanResult) {
-
 		for (Map.Entry<String, Integer> entry : scanResult.entrySet()) {
 			String key = entry.getKey();
 			Integer value = entry.getValue();
@@ -285,6 +281,7 @@ class MyAdapter extends BaseAdapter{
 			requestQueue = Volley.newRequestQueue(this);
 			requestQueue.add(request);
 		}
+		Toast.makeText(this, "Enviado para a API", Toast.LENGTH_SHORT).show();
 	}
 	////////////////////////////////////////////////////////////////////////////////////
 

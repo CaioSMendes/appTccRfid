@@ -1,14 +1,14 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:2:1-108:12
-INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:2:1-108:12
-INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:2:1-108:12
-INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:2:1-108:12
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:2:1-94:12
+INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:2:1-94:12
+INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:2:1-94:12
+INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:2:1-94:12
 MERGED from [com.android.support:support-v4:21.0.3] /Users/caiomendes/.gradle/caches/transforms-3/e718bb9bddc77d00a0b15137ecc9c985/transformed/support-v4-21.0.3/AndroidManifest.xml:14:4-17:12
 MERGED from [com.android.volley:volley:1.2.1] /Users/caiomendes/.gradle/caches/transforms-3/83b085bf5ac15b844df7a4b3f10d7d50/transformed/volley-1.2.1/AndroidManifest.xml:2:1-7:12
-INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:2:1-108:12
-INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:2:1-108:12
-INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:2:1-108:12
+INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:2:1-94:12
+INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:2:1-94:12
+INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:2:1-94:12
 	package
 		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:3:5-42
 		INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml
@@ -32,176 +32,176 @@ ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/Androi
 	android:name
 		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:8:22-78
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:11:5-78
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:9:5-78
 	android:name
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:11:22-76
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:9:22-76
 permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:16:5-87
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:12:5-87
 	android:name
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:16:17-73
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:12:17-73
 permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:18:5-85
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:13:5-85
 	android:name
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:18:17-71
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:13:17-71
 permission#android.permission.ACCESS_WIFI_STATE
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:20:5-82
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:14:5-82
 	android:name
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:20:17-68
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:14:17-68
 permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:22:5-85
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:15:5-85
 	android:name
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:22:17-71
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:15:17-71
 permission#android.permission.CHANGE_WIFI_STATE
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:24:5-82
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:16:5-82
 	android:name
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:24:17-68
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:16:17-68
 permission#android.permission.READ_PHONE_STATE
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:26:5-81
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:17:5-81
 	android:name
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:26:17-67
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:17:17-67
 permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:28:5-87
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:18:5-87
 	android:name
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:28:17-73
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:18:17-73
 permission#android.permission.INTERNET
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:30:5-62
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:19:5-62
 	android:name
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:30:17-59
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:19:17-59
 permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:32:5-90
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:20:5-90
 	android:name
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:32:17-76
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:20:17-76
 uses-permission#android.permission.BLUETOOTH_PRIVILEGED
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:34:5-79
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:21:5-79
 	android:name
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:34:22-76
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:21:22-76
 uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:35:5-98
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:22:5-98
 	android:name
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:35:22-95
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:22:22-95
 uses-permission#android.permission.BLUETOOTH
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:36:5-68
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:23:5-68
 	android:name
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:36:22-65
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:23:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:37:5-74
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:24:5-74
 	android:name
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:37:22-71
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:24:22-71
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:39:5-81
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:25:5-81
 	android:name
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:39:22-78
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:25:22-78
 uses-feature#android.hardware.bluetooth_le
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:40:5-90
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:26:5-90
 	android:required
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:40:64-87
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:26:64-87
 	android:name
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:40:19-63
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:26:19-63
 uses-feature#android.bluetooth.le
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:41:5-80
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:27:5-80
 	android:required
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:41:55-78
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:27:55-78
 	android:name
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:41:19-54
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:27:19-54
 uses-sdk
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:49:5-51:41
-INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:49:5-51:41
-INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:49:5-51:41
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:35:5-37:41
+INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:35:5-37:41
+INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:35:5-37:41
 MERGED from [com.android.support:support-v4:21.0.3] /Users/caiomendes/.gradle/caches/transforms-3/e718bb9bddc77d00a0b15137ecc9c985/transformed/support-v4-21.0.3/AndroidManifest.xml:15:5-42
 MERGED from [com.android.support:support-v4:21.0.3] /Users/caiomendes/.gradle/caches/transforms-3/e718bb9bddc77d00a0b15137ecc9c985/transformed/support-v4-21.0.3/AndroidManifest.xml:15:5-42
 MERGED from [com.android.volley:volley:1.2.1] /Users/caiomendes/.gradle/caches/transforms-3/83b085bf5ac15b844df7a4b3f10d7d50/transformed/volley-1.2.1/AndroidManifest.xml:5:5-43
 MERGED from [com.android.volley:volley:1.2.1] /Users/caiomendes/.gradle/caches/transforms-3/83b085bf5ac15b844df7a4b3f10d7d50/transformed/volley-1.2.1/AndroidManifest.xml:5:5-43
-INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:49:5-51:41
-INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:49:5-51:41
+INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:35:5-37:41
+INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:35:5-37:41
 	android:targetSdkVersion
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:51:9-38
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:37:9-38
 		INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:50:9-35
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:36:9-35
 		INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml
 application
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:53:5-106:19
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:39:5-92:19
 MERGED from [com.android.support:support-v4:21.0.3] /Users/caiomendes/.gradle/caches/transforms-3/e718bb9bddc77d00a0b15137ecc9c985/transformed/support-v4-21.0.3/AndroidManifest.xml:16:5-19
 MERGED from [com.android.support:support-v4:21.0.3] /Users/caiomendes/.gradle/caches/transforms-3/e718bb9bddc77d00a0b15137ecc9c985/transformed/support-v4-21.0.3/AndroidManifest.xml:16:5-19
 	android:label
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:56:9-41
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:42:9-41
 	android:icon
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:55:9-45
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:41:9-45
 	android:allowBackup
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:54:9-35
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:40:9-35
 	android:theme
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:57:9-40
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:43:9-40
 activity#com.example.uhfreader816ubt.MainActivity
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:58:9-66:20
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:44:9-52:20
 	android:label
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:60:13-45
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:46:13-45
 	android:name
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:59:13-68
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:45:13-68
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:61:13-65:29
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:47:13-51:29
 action#android.intent.action.MAIN
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:62:17-69
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:48:17-69
 	android:name
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:62:25-66
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:48:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:64:17-77
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:50:17-77
 	android:name
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:64:27-74
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:50:27-74
 service#com.example.uhfreader816ubt.BluetoothLeService
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:68:9-71:19
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:54:9-57:19
 	android:enabled
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:70:13-35
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:56:13-35
 	android:name
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:69:13-74
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:55:13-74
 service#com.example.uhfreader816ubt.MyService
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:72:9-76:19
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:58:9-62:19
 	android:enabled
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:74:13-35
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:60:13-35
 	android:exported
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:75:13-36
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:61:13-36
 	android:name
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:73:13-65
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:59:13-65
 activity#com.example.uhfreader816ubt.TabActivity
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:78:9-81:20
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:64:9-67:20
 	android:label
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:80:13-55
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:66:13-55
 	android:name
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:79:13-67
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:65:13-67
 activity#com.example.uhfreader816ubt.IsoG2Activity
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:82:9-85:20
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:68:9-71:20
 	android:label
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:84:13-60
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:70:13-60
 	android:name
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:83:13-69
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:69:13-69
 activity#com.example.uhfreader816ubt.Iso6BActivity
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:86:9-89:20
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:72:9-75:20
 	android:label
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:88:13-62
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:74:13-62
 	android:name
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:87:13-69
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:73:13-69
 activity#com.example.uhfreader816ubt.TabsActivity
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:90:9-93:20
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:76:9-79:20
 	android:label
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:92:13-56
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:78:13-56
 	android:name
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:91:13-68
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:77:13-68
 activity#com.example.uhfreader816ubt.ReadWActivity
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:94:9-97:20
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:80:9-83:20
 	android:label
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:96:13-58
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:82:13-58
 	android:name
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:95:13-69
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:81:13-69
 activity#com.example.uhfreader816ubt.GetActive
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:98:9-101:20
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:84:9-87:20
 	android:label
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:100:13-62
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:86:13-62
 	android:name
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:99:13-65
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:85:13-65
 activity#com.example.uhfreader816ubt.ScanModeGroup
-ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:102:9-105:20
+ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:88:9-91:20
 	android:label
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:104:13-67
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:90:13-67
 	android:name
-		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:103:13-69
+		ADDED from /Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:89:13-69

@@ -126,7 +126,7 @@
                 android:layout_height="40dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_weight="1"
-                android:text="读取"
+                android:text="Ler"
                 />
             
             <Button 
@@ -135,7 +135,7 @@
                 android:layout_height="40dp"
                  android:layout_gravity="center_horizontal"
                 android:layout_weight="1"
-                android:text="设置"
+                android:text="Configurar"
                 />
         </TableRow>
         

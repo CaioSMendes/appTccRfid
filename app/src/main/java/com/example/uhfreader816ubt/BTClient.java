@@ -365,64 +365,7 @@ public class BTClient {
 			 return -1;
 		 }
 	 }
-	 
-	 /*public static int GetInventoryData()
-	 {
-		   time1= System.currentTimeMillis();
-		   int indexLen=0;
-		   while((System.currentTimeMillis()-time1)<3000){
-			   SystemClock.sleep(50);
-			   int recvLen=MyService.RecvString.length()/2;
-			   if(recvLen>0)
-			   {
-				   byte[] buffer =new byte[recvLen];
-				   buffer=hexStringToBytes(MyService.RecvString);
-				   memcpy(buffer,0,RecvBuff,0,recvLen);
-				   RecvLength=recvLen;
-				   byte[]btArBuff=new byte[5000];
-				   memcpy(buffer,0,RecvBuff,0,recvLen);
-				   int btLen=recvLen;
-					//////���´�����յ�������
-					while (btLen>0)
-					{
-						int len=(btArBuff[0]&255)+1;
-						if(btLen<len)//δ�������������һ��֡���ȣ��˳�����������
-						{
-							break;
-						}
-						else
-						{
-							if(CheckCRC(btArBuff,btLen))
-							{
-								if(((btArBuff[3]==0x01)||(btArBuff[3]==0x02)||(btArBuff[3]==0xFB)||(btArBuff[3]==0xF8)||(btArBuff[3]==0xF9)||(btArBuff[3]==0xFD)||(btArBuff[3]==0xFE)||(btArBuff[3]==0xFF)))
-								{//����֡
-									return 0;
-								}
-								else
-								{//�ǽ���֡
-									btLen=btLen-len;
-									byte[] data =new byte[5000];
-									memcpy(btArBuff,len,data,0,btLen);
-									ArrayClear(btArBuff,5000);
-									memcpy(data,0,btArBuff,0,btLen);
-								}
-							}
-							else 
-							{
-								btLen=btLen-len;
-								byte[] data =new byte[5000];
-								memcpy(btArBuff,len,data,0,btLen);
-								ArrayClear(btArBuff,5000);
-								memcpy(data,0,btArBuff,0,btLen);
-							}
-						}
-					}
-				  
-		       }
-		   }
-		   CmdIng=false;
-		   return -1;
-	 }*/
+
 	 public static int Inventory_G2(byte QValue,byte Session, byte AdrTID, byte LenTID,
 			 byte TIDFlag,int[] CardNum,byte[] EPCList,int[] EPCLength) {
 		 try
@@ -509,11 +452,6 @@ public class BTClient {
 			 getCRC(Msg,11+Enum*2);
 			 CmdTime=500;
 			 int Len = 13+Enum*2;
-			 /*byte[]data = new byte[Msg[0]+1];
-			 memcpy(Msg,0,data,0,Msg[0]+1);
-			 MyService.target_chara.setValue(data); 
-			 mBluetoothLeService.writeCharacteristic(MyService.target_chara);
-			 Log.d("write:", bytesToHexString(data,0,Msg[0]+1));*/
 			 boolean SendFlag=true;
 			 while(SendFlag)
 			 {
@@ -586,7 +524,6 @@ public class BTClient {
 			 Msg[10+Enum*2+WNum*2]=Psd[3];
 			 getCRC(Msg,11+Enum*2+WNum*2);
 			 CmdTime=500;
-//			 mBluetoothLeService.writeCharacteristic(MyService.target_chara);
 			 int Len = 13+Enum*2+WNum*2;
 			 boolean SendFlag=true;
 			 while(SendFlag)

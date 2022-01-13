@@ -112,9 +112,7 @@ public class MyService extends Service {
 	   return binder;
    }
    
-   //����������̳�Binder
    public class LocalBinder extends Binder{
-       //���ر��ط���
 	   MyService getService(){
            return MyService.this;
        }
@@ -140,15 +138,12 @@ public class MyService extends Service {
            BTClient.mBluetoothLeService = null;
    } 
    
-   /*service �ص�����*/
    private final ServiceConnection mServiceConnection = new ServiceConnection() {
        @Override
        public void onServiceConnected(ComponentName componentName, IBinder service) {
        	BTClient.mBluetoothLeService = ((BluetoothLeService.LocalBinder) service).getService();
            if (!BTClient.mBluetoothLeService.initialize()) {
            }
-           // Automatically connects to the device upon successful start-up initialization.
-           //����bluetoothservice ��connect ��������������
            BTClient.mBluetoothLeService.connect(mDeviceAddress);
        }
 
@@ -167,17 +162,12 @@ public class MyService extends Service {
                mConnected = true;
                status="connected";
                updateConnectionState(status);
-               //nConnect=true;
-               /////////////////////////////////////////////////////////////
                System.out.println("BroadcastReceiver :"+"device connected");
              
            } else if (BluetoothLeService.ACTION_GATT_DISCONNECTED.equals(action)) {
                mConnected = false;
                status="disconnected";
                updateConnectionState(status);
-               //nConnect=false;
-              // unregisterReceiver(mGattUpdateReceiver);//�Ͽ�����ע��
- 			  //  BTClient.mBluetoothLeService = null;
                System.out.println("BroadcastReceiver :"+"device disconnected");
               
            } else if (BluetoothLeService.ACTION_GATT_SERVICES_DISCOVERED.equals(action)) {
@@ -186,19 +176,13 @@ public class MyService extends Service {
            	 System.out.println("BroadcastReceiver :"+"device SERVICES_DISCOVERED");
            } 
           	 else if (BluetoothLeService.ACTION_DATA_AVAILABLE.equals(action)) {
-          		//byte[] Msg = intent.getExtras().getByteArray(BluetoothLeService.EXTRA_DATA);
-          		
-          		 
           		 String temp =intent.getExtras().getString(
 						BluetoothLeService.EXTRA_DATA);
-          		
               displayData(temp);
-          	// System.out.println("BroadcastReceiver onData:"+intent.getStringExtra(BluetoothLeService.EXTRA_DATA));
           }
        }
    };
    
-   /*��������״̬*/
    private void updateConnectionState( String status)
    {
        Message msg =new Message();
@@ -209,9 +193,7 @@ public class MyService extends Service {
    	   myHandler.sendMessage(msg);
    	   System.out.println("connect_state:"+status);
    }
-   
-   
-   /*��ͼ������*/
+
    private  IntentFilter makeGattUpdateIntentFilter() {
        final IntentFilter intentFilter = new IntentFilter();
        intentFilter.addAction(BluetoothLeService.ACTION_GATT_CONNECTED);
@@ -255,7 +237,6 @@ public class MyService extends Service {
    public void ConnectBT(String mDeviceAddress)
    {
        if (mScanning) {
-       	/*ֹͣɨ���豸*/
            mBluetoothAdapter.stopLeScan(mLeScanCallback);
            mScanning = false;
        }
@@ -266,10 +247,8 @@ public class MyService extends Service {
    }
    
    public void DisconnectBT() {
-	       //unregisterReceiver(mGattUpdateReceiver);
 	       BTClient.mBluetoothLeService.disconnect();
 	       BTClient.mBluetoothLeService.close();
-		   //BTClient.mBluetoothLeService = null;  	   
        }
    private void displayGattServices(List<BluetoothGattService> gattServices){
    	 
@@ -279,33 +258,22 @@ public class MyService extends Service {
 	        String unknownServiceString = "unknown_service";
 	        String unknownCharaString = "unknown_characteristic";
 		 
-	        //��������,����չ�����б�ĵ�һ������
 	        ArrayList<HashMap<String, String>> gattServiceData = new ArrayList<HashMap<String, String>>();
 	        
-	        //�������ݣ�������ĳһ���������������ֵ���ϣ�
 	        ArrayList<ArrayList<HashMap<String, String>>> gattCharacteristicData
 	                = new ArrayList<ArrayList<HashMap<String, String>>>();
 	        
-	        //���ֲ�Σ���������ֵ����
 	        mGattCharacteristics = new ArrayList<ArrayList<BluetoothGattCharacteristic>>();
 	        
 	     // Loops through available GATT Services.
 	        for (BluetoothGattService gattService : gattServices) {
-	        
-	        	//��ȡ�����б�
-	        	HashMap<String, String> currentServiceData = new HashMap<String, String>();
+	            HashMap<String, String> currentServiceData = new HashMap<String, String>();
 	            uuid = gattService.getUuid().toString();
-	            
-	            //������ݸ�uuid��ȡ��Ӧ�ķ������ơ�SampleGattAttributes�������Ҫ�Զ��塣
-	           
 	            gattServiceData.add(currentServiceData);
-	            
 	            System.out.println("Service uuid:"+uuid);
-	        	
 	            ArrayList<HashMap<String, String>> gattCharacteristicGroupData =
 	                    new ArrayList<HashMap<String, String>>();
 	            
-	            //�ӵ�ǰѭ����ָ��ķ����ж�ȡ����ֵ�б�
 	            List<BluetoothGattCharacteristic> gattCharacteristics =
 	                    gattService.getCharacteristics();
 	            
@@ -313,44 +281,31 @@ public class MyService extends Service {
 	                    new ArrayList<BluetoothGattCharacteristic>();
 	            
 	         // Loops through available Characteristics.
-	            //���ڵ�ǰѭ����ָ��ķ����е�ÿһ������ֵ
 	            for (final BluetoothGattCharacteristic gattCharacteristic : gattCharacteristics) {
 	                charas.add(gattCharacteristic);
 	                HashMap<String, String> currentCharaData = new HashMap<String, String>();
 	                uuid = gattCharacteristic.getUuid().toString();
               
 	               
-	                if(gattCharacteristic.getUuid().toString().equals(HEART_RATE_MEASUREMENT)){                    
-	                    //���Զ�ȡ��ǰCharacteristic���ݣ��ᴥ��mOnDataAvailable.onCharacteristicRead()  
-	                   
-	                      
-	                    //����Characteristic��д��֪ͨ,�յ�����ģ������ݺ�ᴥ��mOnDataAvailable.onCharacteristicWrite()  
-	                	BTClient.mBluetoothLeService.setCharacteristicNotification(gattCharacteristic, true);  
+	                if(gattCharacteristic.getUuid().toString().equals(HEART_RATE_MEASUREMENT)){
+	                	BTClient.mBluetoothLeService.setCharacteristicNotification(gattCharacteristic, true);
 	                    target_chara=gattCharacteristic;
-	                    //������������  
-	                    //������ģ��д������  
-	                    //mBluetoothLeService.writeCharacteristic(gattCharacteristic);  
 	                }  
 	                List<BluetoothGattDescriptor> descriptors= gattCharacteristic.getDescriptors();
 	                for(BluetoothGattDescriptor descriptor:descriptors)
 	                {
 	                	System.out.println("---descriptor UUID:"+descriptor.getUuid());
-	                	//��ȡ����ֵ������
-	                	BTClient.mBluetoothLeService.getCharacteristicDescriptor(descriptor); 
-	                	//mBluetoothLeService.setCharacteristicNotification(gattCharacteristic, true);
+	                	BTClient.mBluetoothLeService.getCharacteristicDescriptor(descriptor);
 	                }
 	                
 	                gattCharacteristicGroupData.add(currentCharaData);
 	            }
-	            //���Ⱥ�˳�򣬷ֲ�η�������ֵ�����У�ֻ������ֵ
 	            mGattCharacteristics.add(charas);
-	            //�����ڶ�����չ�б��������������ֵ��
 	            gattCharacteristicData.add(gattCharacteristicGroupData);
 	            
 	        }
      }
    
-   /*ɨ�������豸�Ļص��������᷵������BluetoothDevice�����Ի�ȡname MAC �ȵ�*/
 	public  BluetoothAdapter.LeScanCallback mLeScanCallback =
 	        new BluetoothAdapter.LeScanCallback() {
 	    
@@ -360,12 +315,8 @@ public class MyService extends Service {
 				
 			 if(!mBleArray.contains(device)) {
 				 	mBleArray.add(device);
-				 	//rssis.add(rssi);
 	            }
 			System.out.println("Address:"+device.getAddress());
-			//System.out.println("Name:"+device.getName());
-			//System.out.println("rssi:"+rssi);
-			
 		}
 	};
 		

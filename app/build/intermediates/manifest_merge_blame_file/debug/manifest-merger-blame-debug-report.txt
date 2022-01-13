@@ -5,11 +5,11 @@
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
-7-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:49:5-51:41
+7-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:35:5-37:41
 8        android:minSdkVersion="21"
-8-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:50:9-35
+8-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:36:9-35
 9        android:targetSdkVersion="21" />
-9-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:51:9-38
+9-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:37:9-38
 10
 11    <uses-permission android:name="android.permission.INTERNET" />
 11-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:7:5-67
@@ -17,192 +17,177 @@
 12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 12-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:8:5-81
 12-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:8:22-78
-13    <!--
-14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-16    -->
-17    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-17-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:11:5-78
-17-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:11:22-76
-18    <!-- <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/> -->
-19
-20
-21    <!-- 这个权限用于进行网络定位 -->
-22    <permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-22-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:16:5-87
-22-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:16:17-73
-23    <!-- 这个权限用于访问GPS定位 -->
-24    <permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-24-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:18:5-85
-24-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:18:17-71
-25    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
-26    <permission android:name="android.permission.ACCESS_WIFI_STATE" />
-26-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:20:5-82
-26-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:20:17-68
-27    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
-28    <permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-28-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:22:5-85
-28-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:22:17-71
-29    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
-30    <permission android:name="android.permission.CHANGE_WIFI_STATE" />
-30-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:24:5-82
-30-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:24:17-68
-31    <!-- 用于读取手机当前的状态 -->
-32    <permission android:name="android.permission.READ_PHONE_STATE" />
-32-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:26:5-81
-32-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:26:17-67
-33    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
-34    <permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-34-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:28:5-87
-34-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:28:17-73
-35    <!-- 访问网络，网络定位需要上网 -->
-36    <permission android:name="android.permission.INTERNET" />
-36-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:30:5-62
-36-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:30:17-59
-37    <!-- SD卡读取权限，用户写入离线定位数据 -->
-38    <permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
-38-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:32:5-90
-38-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:32:17-76
-39
-40    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
-40-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:34:5-79
-40-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:34:22-76
-41    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
-41-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:35:5-98
-41-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:35:22-95
-42    <uses-permission android:name="android.permission.BLUETOOTH" />
-42-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:36:5-68
-42-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:36:22-65
-43    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-43-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:37:5-74
-43-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:37:22-71
-44    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-44-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:39:5-81
-44-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:39:22-78
-45
-46    <uses-feature
-46-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:40:5-90
-47        android:name="android.hardware.bluetooth_le"
-47-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:40:19-63
-48        android:required="true" />
-48-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:40:64-87
-49    <uses-feature
-49-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:41:5-80
-50        android:name="android.bluetooth.le"
-50-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:41:19-54
-51        android:required="true" />
-51-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:41:55-78
-52
-53    <uses-permission android:name="android.permission.BLUETOOTH" />
-53-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:36:5-68
-53-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:36:22-65
-54    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-54-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:37:5-74
-54-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:37:22-71
-55
-56    <uses-feature
-56-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:40:5-90
-57        android:name="android.hardware.bluetooth_le"
-57-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:40:19-63
-58        android:required="true" />
-58-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:40:64-87
-59
-60    <application
-60-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:53:5-106:19
-61        android:allowBackup="true"
-61-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:54:9-35
-62        android:debuggable="true"
-63        android:icon="@drawable/ic_launcher"
-63-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:55:9-45
-64        android:label="@string/app_name"
-64-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:56:9-41
-65        android:testOnly="true"
-66        android:theme="@style/AppTheme" >
-66-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:57:9-40
-67        <activity
-67-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:58:9-66:20
-68            android:name="com.example.uhfreader816ubt.MainActivity"
-68-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:59:13-68
-69            android:label="@string/app_name" >
-69-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:60:13-45
-70            <intent-filter>
-70-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:61:13-65:29
-71                <action android:name="android.intent.action.MAIN" />
-71-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:62:17-69
-71-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:62:25-66
-72
-73                <category android:name="android.intent.category.LAUNCHER" />
-73-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:64:17-77
-73-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:64:27-74
-74            </intent-filter>
+13    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+13-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:9:5-78
+13-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:9:22-76
+14
+15    <permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+15-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:12:5-87
+15-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:12:17-73
+16    <permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+16-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:13:5-85
+16-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:13:17-71
+17    <permission android:name="android.permission.ACCESS_WIFI_STATE" />
+17-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:14:5-82
+17-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:14:17-68
+18    <permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:15:5-85
+18-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:15:17-71
+19    <permission android:name="android.permission.CHANGE_WIFI_STATE" />
+19-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:16:5-82
+19-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:16:17-68
+20    <permission android:name="android.permission.READ_PHONE_STATE" />
+20-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:17:5-81
+20-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:17:17-67
+21    <permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+21-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:18:5-87
+21-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:18:17-73
+22    <permission android:name="android.permission.INTERNET" />
+22-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:19:5-62
+22-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:19:17-59
+23    <permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+23-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:20:5-90
+23-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:20:17-76
+24
+25    <uses-permission android:name="android.permission.BLUETOOTH_PRIVILEGED" />
+25-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:21:5-79
+25-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:21:22-76
+26    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+26-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:22:5-98
+26-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:22:22-95
+27    <uses-permission android:name="android.permission.BLUETOOTH" />
+27-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:23:5-68
+27-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:23:22-65
+28    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+28-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:24:5-74
+28-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:24:22-71
+29    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+29-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:25:5-81
+29-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:25:22-78
+30
+31    <uses-feature
+31-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:26:5-90
+32        android:name="android.hardware.bluetooth_le"
+32-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:26:19-63
+33        android:required="true" />
+33-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:26:64-87
+34    <uses-feature
+34-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:27:5-80
+35        android:name="android.bluetooth.le"
+35-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:27:19-54
+36        android:required="true" />
+36-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:27:55-78
+37
+38    <uses-permission android:name="android.permission.BLUETOOTH" />
+38-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:23:5-68
+38-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:23:22-65
+39    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+39-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:24:5-74
+39-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:24:22-71
+40
+41    <uses-feature
+41-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:26:5-90
+42        android:name="android.hardware.bluetooth_le"
+42-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:26:19-63
+43        android:required="true" />
+43-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:26:64-87
+44
+45    <application
+45-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:39:5-92:19
+46        android:allowBackup="true"
+46-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:40:9-35
+47        android:debuggable="true"
+48        android:icon="@drawable/ic_launcher"
+48-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:41:9-45
+49        android:label="@string/app_name"
+49-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:42:9-41
+50        android:testOnly="true"
+51        android:theme="@style/AppTheme" >
+51-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:43:9-40
+52        <activity
+52-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:44:9-52:20
+53            android:name="com.example.uhfreader816ubt.MainActivity"
+53-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:45:13-68
+54            android:label="@string/app_name" >
+54-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:46:13-45
+55            <intent-filter>
+55-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:47:13-51:29
+56                <action android:name="android.intent.action.MAIN" />
+56-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:48:17-69
+56-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:48:25-66
+57
+58                <category android:name="android.intent.category.LAUNCHER" />
+58-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:50:17-77
+58-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:50:27-74
+59            </intent-filter>
+60        </activity>
+61
+62        <service
+62-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:54:9-57:19
+63            android:name="com.example.uhfreader816ubt.BluetoothLeService"
+63-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:55:13-74
+64            android:enabled="true" >
+64-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:56:13-35
+65        </service>
+66        <service
+66-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:58:9-62:19
+67            android:name="com.example.uhfreader816ubt.MyService"
+67-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:59:13-65
+68            android:enabled="true"
+68-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:60:13-35
+69            android:exported="true" >
+69-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:61:13-36
+70        </service>
+71
+72        <activity
+72-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:64:9-67:20
+73            android:name="com.example.uhfreader816ubt.TabActivity"
+73-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:65:13-67
+74            android:label="@string/title_activity_tab" >
+74-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:66:13-55
 75        </activity>
-76
-77        <service
-77-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:68:9-71:19
-78            android:name="com.example.uhfreader816ubt.BluetoothLeService"
-78-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:69:13-74
-79            android:enabled="true" >
-79-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:70:13-35
-80        </service>
-81        <service
-81-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:72:9-76:19
-82            android:name="com.example.uhfreader816ubt.MyService"
-82-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:73:13-65
-83            android:enabled="true"
-83-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:74:13-35
-84            android:exported="true" >
-84-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:75:13-36
-85        </service>
-86
-87        <activity
-87-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:78:9-81:20
-88            android:name="com.example.uhfreader816ubt.TabActivity"
-88-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:79:13-67
-89            android:label="@string/title_activity_tab" >
-89-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:80:13-55
-90        </activity>
-91        <activity
-91-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:82:9-85:20
-92            android:name="com.example.uhfreader816ubt.IsoG2Activity"
-92-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:83:13-69
-93            android:label="@string/title_activity_iso15693" >
-93-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:84:13-60
-94        </activity>
-95        <activity
-95-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:86:9-89:20
-96            android:name="com.example.uhfreader816ubt.Iso6BActivity"
-96-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:87:13-69
-97            android:label="@string/title_activity_iso14443_a" >
-97-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:88:13-62
-98        </activity>
-99        <activity
-99-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:90:9-93:20
-100            android:name="com.example.uhfreader816ubt.TabsActivity"
-100-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:91:13-68
-101            android:label="@string/title_activity_tabs" >
-101-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:92:13-56
-102        </activity>
-103        <activity
-103-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:94:9-97:20
-104            android:name="com.example.uhfreader816ubt.ReadWActivity"
-104-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:95:13-69
-105            android:label="@string/title_activity_read_w" >
-105-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:96:13-58
-106        </activity>
-107        <activity
-107-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:98:9-101:20
-108            android:name="com.example.uhfreader816ubt.GetActive"
-108-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:99:13-65
-109            android:label="@string/title_activity_get_active" >
-109-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:100:13-62
-110        </activity>
-111        <activity
-111-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:102:9-105:20
-112            android:name="com.example.uhfreader816ubt.ScanModeGroup"
-112-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:103:13-69
-113            android:label="@string/title_activity_scan_mode_group" >
-113-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:104:13-67
-114        </activity>
-115    </application>
-116
-117</manifest>
+76        <activity
+76-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:68:9-71:20
+77            android:name="com.example.uhfreader816ubt.IsoG2Activity"
+77-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:69:13-69
+78            android:label="@string/title_activity_iso15693" >
+78-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:70:13-60
+79        </activity>
+80        <activity
+80-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:72:9-75:20
+81            android:name="com.example.uhfreader816ubt.Iso6BActivity"
+81-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:73:13-69
+82            android:label="@string/title_activity_iso14443_a" >
+82-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:74:13-62
+83        </activity>
+84        <activity
+84-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:76:9-79:20
+85            android:name="com.example.uhfreader816ubt.TabsActivity"
+85-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:77:13-68
+86            android:label="@string/title_activity_tabs" >
+86-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:78:13-56
+87        </activity>
+88        <activity
+88-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:80:9-83:20
+89            android:name="com.example.uhfreader816ubt.ReadWActivity"
+89-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:81:13-69
+90            android:label="@string/title_activity_read_w" >
+90-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:82:13-58
+91        </activity>
+92        <activity
+92-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:84:9-87:20
+93            android:name="com.example.uhfreader816ubt.GetActive"
+93-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:85:13-65
+94            android:label="@string/title_activity_get_active" >
+94-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:86:13-62
+95        </activity>
+96        <activity
+96-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:88:9-91:20
+97            android:name="com.example.uhfreader816ubt.ScanModeGroup"
+97-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:89:13-69
+98            android:label="@string/title_activity_scan_mode_group" >
+98-->/Users/caiomendes/Desktop/H301-(6.0+)AppTccImport/app/src/main/AndroidManifest.xml:90:13-67
+99        </activity>
+100    </application>
+101
+102</manifest>

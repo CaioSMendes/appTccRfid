@@ -6,12 +6,17 @@
         <entry key="app/src/main/res/layout/activity_6b.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_g2.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/activity_readw.xml" value="0.11666666666666667" />
+        <entry key="app/src/main/res/layout/activity_readw.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_tabs.xml" value="0.234375" />
         <entry key="app/src/main/res/layout/get_active.xml" value="0.234375" />
         <entry key="app/src/main/res/layout/list.xml" value="0.234375" />
         <entry key="app/src/main/res/layout/listgl.xml" value="0.234375" />
         <entry key="app/src/main/res/layout/listitem.xml" value="0.234375" />
+        <entry key="app/src/main/res/menu/get_active.xml" value="0.1171875" />
+        <entry key="app/src/main/res/menu/iso14443_a.xml" value="0.1171875" />
+        <entry key="app/src/main/res/menu/iso15693.xml" value="0.1171875" />
+        <entry key="app/src/main/res/menu/main.xml" value="0.1171875" />
+        <entry key="app/src/main/res/menu/read_w.xml" value="0.1171875" />
         <entry key="app/src/main/res/menu/scan_mode_group.xml" value="0.11666666666666667" />
       </map>
     </option>

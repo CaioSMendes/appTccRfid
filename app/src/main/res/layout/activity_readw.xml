@@ -182,7 +182,7 @@
                 android:layout_height="@dimen/button_height"
                 android:layout_gravity="center_horizontal"
                 android:layout_weight="1"
-                android:text="读" />
+                android:text="Ler" />
 
             <Button
                 android:id="@+id/button_write_6c"
@@ -190,7 +190,7 @@
                 android:layout_height="@dimen/button_height"
                 android:layout_gravity="center_horizontal"
                 android:layout_weight="1"
-                android:text="写" />
+                android:text="Escrever" />
         </TableRow>
     </TableLayout>
 

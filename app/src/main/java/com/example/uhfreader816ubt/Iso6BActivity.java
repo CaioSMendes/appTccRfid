@@ -72,7 +72,6 @@ private Spinner tvpowerdBm;
 		adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 		tvpowerdBm.setAdapter(adapter3); 
 		tvpowerdBm.setSelection(26, true);
-	    ////////////Ƶ��ѡ��
 		strBand[0]="Chinese band2";
 		strBand[1]="US band";
 		strBand[2]="Korean band";
@@ -84,21 +83,18 @@ private Spinner tvpowerdBm;
 		spada_Band.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);  
 		spBand.setAdapter(spada_Band);  
 		spBand.setSelection(0,false); 
-		SetFre(1);////��ʼ��Ƶ��
-		 // ���Spinner�¼�����  
-		spBand.setOnItemSelectedListener(new Spinner.OnItemSelectedListener() {  
+		SetFre(1);
+		spBand.setOnItemSelectedListener(new Spinner.OnItemSelectedListener() {
 	    public void onItemSelected(AdapterView<?> arg0, View arg1,  
 	            int arg2, long arg3) {  
 	        // TODO Auto-generated method stub  
-	        // ������ʾ��ǰѡ�����  
-	        arg0.setVisibility(View.VISIBLE);  
+	        arg0.setVisibility(View.VISIBLE);
 	        if(arg2==0)SetFre(1);
 	        if(arg2==1)SetFre(2);
 	        if(arg2==2)SetFre(3);
 	        if(arg2==3)SetFre(4);
 	        if(arg2==4)SetFre(8);
-	        //ѡ��Ĭ��ֵ����ִ��  
-	    }  
+	    }
 	    public void onNothingSelected(AdapterView<?> arg0) {  
 	        // TODO Auto-generated method stub  
 	    	}  
@@ -272,7 +268,6 @@ private Spinner tvpowerdBm;
 						Power = tvpowerdBm.getSelectedItemPosition();
 						int fCmdRet = BTClient.SetPower((byte)Power);
 						fCmdRet = BTClient.SetRegion((byte)MaxFre, (byte)MinFre);
-						//UhfGetData.SetUhfInfo((byte)MaxFre, (byte)MinFre, (byte)Power, (byte)0);
 					}
 				}).start();
 			}

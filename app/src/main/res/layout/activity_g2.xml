@@ -118,14 +118,14 @@
 				android:layout_height="40dp"
 				android:layout_centerInParent="true"
 				android:gravity="center"
-				android:text="Scan"></Button>
+				android:text="Escanear"></Button>
 
 			<Button
 				android:id="@+id/btClear"
 				android:layout_width="wrap_content"
 				android:layout_height="40dp"
 				android:layout_toRightOf="@+id/button_scanrr9"
-				android:text="Clear" />
+				android:text="Limpar" />
 
 			<Button
 				android:id="@+id/btEnviarAPI"

@@ -84,14 +84,11 @@ public class GetActive extends Activity implements OnClickListener {
 				Scanflag=true;
 				if(!MyService.RecvString.equals(""))
 				{
-					/*updateuid(MyService.RecvString);
-					MyService.RecvString="";*/
-					
 					EPCList += MyService.RecvString;
 					MyService.RecvString ="";
 					while(EPCList.length()>0)
 					{
-						int index = EPCList.indexOf("00EE00");//��д����ַ��00����
+						int index = EPCList.indexOf("00EE00");
 						if(index>0)
 						{
 							EPCList = EPCList.substring(index-2);
@@ -120,8 +117,7 @@ public class GetActive extends Activity implements OnClickListener {
 								String temp =sEPC.substring(8,elen+8);
 								updateuid(temp);
 							}
-							/*if(BTClient.CheckCRC(data, len+1))
-							updateuid(sEPC.substring(8,(len-5)*2));*/
+
 						}
 						else
 						{
@@ -156,7 +152,6 @@ public class GetActive extends Activity implements OnClickListener {
 	        }
  
 	        public void addDevice(String uid) {
-	        	//mList.add(uid);
 	        	mList.add(0, uid);
 	        }
             

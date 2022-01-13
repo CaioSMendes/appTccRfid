@@ -74,10 +74,10 @@ public class ReadWActivity extends Activity implements OnClickListener, OnItemSe
                   {
                 	  if(str_update=="00")
                 	  {
-                		  Toast.makeText(ReadWActivity.this, "�ɹ���", Toast.LENGTH_SHORT).show();
+                		  Toast.makeText(ReadWActivity.this, "Read ACTV", Toast.LENGTH_SHORT).show();
                 	  }else
                 	  {
-                		  Toast.makeText(ReadWActivity.this, "ʧ�ܣ�", Toast.LENGTH_SHORT).show();
+                		  Toast.makeText(ReadWActivity.this, "Read", Toast.LENGTH_SHORT).show();
                 	  }
                       break;   
                   }  
@@ -137,12 +137,6 @@ public class ReadWActivity extends Activity implements OnClickListener, OnItemSe
 		rButton = (Button)findViewById(R.id.button_read_6c);
 		wButton = (Button)findViewById(R.id.button_write_6c);
 		edENum0 = (EditText)findViewById(R.id.epc0);
-//		edENums = new EditText[]{edENum0, edENum1, edENum2, edENum3};
-		
-/*		edENum0.setOnClickListener(this);
-		edENum1.setOnClickListener(this);
-		edENum2.setOnClickListener(this);
-		edENum3.setOnClickListener(this);*/
 		rButton.setOnClickListener(this);
 		wButton.setOnClickListener(this);
 		}
@@ -162,7 +156,6 @@ public class ReadWActivity extends Activity implements OnClickListener, OnItemSe
                 "FirstActivity", intent);  
         View view = w.getDecorView();  
         ((ActivityGroup)getParent()).setContentView(view); 
-        //((ActivityGroup)getParent()).getLocalActivityManager().destroyActivity("SecondActivity", false);
 	}
 	
 	@SuppressLint("ResourceAsColor")
@@ -199,9 +192,6 @@ public class ReadWActivity extends Activity implements OnClickListener, OnItemSe
 	    					str_update="";
 	    					myHandler.removeMessages(MSG_UPDATE_WRITE);
 	                		myHandler.sendEmptyMessage(MSG_UPDATE_WRITE);
-	    					/*str_update="";
-	    					myHandler.removeMessages(MSG_UPDATE_DATA);
-	                		myHandler.sendEmptyMessage(MSG_UPDATE_DATA);*/
 	                	}
 	                }  
 	            });  

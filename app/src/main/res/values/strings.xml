@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">UHFReader816UBT</string>
+    <string name="app_name">Leitor RFID APP</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_tab">TabActivity</string>
@@ -9,14 +9,14 @@
     <string name="title_activity_tabs">TabsActivity</string>
     <string name="title_activity_read_w">ReadWActivity</string>
     <string name="title_activity_get_active">GetActive</string>
-    <string name="dmin">最小频点:</string>
-    <string name="band">频段:</string>
-    <string name="dmax">最大频点:</string>
-    <string name="power">功率:</string>
+    <string name="dmin">min:</string>
+    <string name="band">band:</string>
+    <string name="dmax">max:</string>
+    <string name="power">power:</string>
     <string-array name="men_select">
         <item>保留区</item>
-        <item>EPC区</item>
-        <item>TID区</item>
+        <item>EPC</item>
+        <item>TID</item>
         <item>用户区</item>
     </string-array>
     <string-array name="Fre_select">

@@ -39,9 +39,9 @@
         android:id="@+id/scan_dev_btn"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dip"
         android:layout_below="@+id/linearLayout1"
         android:layout_centerHorizontal="true"
-        android:text="设备搜索" />
+        android:layout_marginTop="20dip"
+        android:text="Buscar Dispositivo" />
 
 </RelativeLayout>

@@ -36,13 +36,13 @@ com/example/uhfreader816ubt/Iso6BActivity.java
  com.example.uhfreader816ubt.Iso6BActivity$3$1
  com.example.uhfreader816ubt.Iso6BActivity$3$2
  com.example.uhfreader816ubt.Iso6BActivity$4
+com/example/uhfreader816ubt/ScanModeGroup.java
+ com.example.uhfreader816ubt.ScanModeGroup
 com/example/uhfreader816ubt/ReadWActivity.java
  com.example.uhfreader816ubt.ReadWActivity
  com.example.uhfreader816ubt.ReadWActivity$1
  com.example.uhfreader816ubt.ReadWActivity$2
  com.example.uhfreader816ubt.ReadWActivity$3
-com/example/uhfreader816ubt/ScanModeGroup.java
- com.example.uhfreader816ubt.ScanModeGroup
 com/example/uhfreader816ubt/IsoG2Activity.java
  com.example.uhfreader816ubt.IsoG2Activity
  com.example.uhfreader816ubt.IsoG2Activity$1
