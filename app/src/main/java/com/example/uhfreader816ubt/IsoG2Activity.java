@@ -46,6 +46,8 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.Toast;
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
 
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
@@ -245,36 +247,44 @@ class MyAdapter extends BaseAdapter{
 		else if(enviar == arg0) { // Chamando botão de enviar para API
 			JSONObject json =  new JSONObject(scanResult);
 			System.out.printf( "JSON: %s", json); // PEGA TODA STRING E MANADA EM JSON
-			Toast.makeText(this, "Entrou", Toast.LENGTH_SHORT).show();
-			mandaPostApi("Teste parametro");//AQUI mandar as requisicoes para API
+			Toast.makeText(this, "Enviado", Toast.LENGTH_SHORT).show();
+			//mandaPostApi("Teste parametro");//AQUI mandar as requisicoes para API
+			mandaPostApi(scanResult);//AQUI mandar as requisicoes para API
+			//Map<String, Integer> scanResult
 		}
 		////////////////////////////////////////////////////////////////////////////////
 	}
 	////////////////////////////// TRECHO REQUEST POST API ////////////////////////////
-	private void mandaPostApi(String code) {
-		String url = "https://upc-rfid-api-unb.herokuapp.com/bluetoothsearches";
-		JSONObject paramsApi = new JSONObject();
-		try {
-			paramsApi.put("rfidCode", code);
-		} catch (JSONException e){
-			e.printStackTrace();
+	private void mandaPostApi(Map<String, Integer> scanResult) {
+
+		for (Map.Entry<String, Integer> entry : scanResult.entrySet()) {
+			String key = entry.getKey();
+			Integer value = entry.getValue();
+			System.out.println("RFID Code: " + key + ", Qtd lidas: " + value);
+			String url = "https://upc-rfid-api-unb.herokuapp.com/bluetoothsearches";
+			JSONObject paramsApi = new JSONObject();
+			try {
+				paramsApi.put("rfidCode", key);//aqui manda o params para API
+			} catch (JSONException e) {
+				e.printStackTrace();
+			}
+			JsonObjectRequest request = new JsonObjectRequest(Request.Method.POST, url, paramsApi, new Response.Listener<JSONObject>() {
+				@Override
+				public void onResponse(JSONObject response) {
+					System.out.printf("Response", "" + response);
+
+				}
+			}, new Response.ErrorListener() {
+				@Override
+				public void onErrorResponse(VolleyError error) {
+					System.out.printf("Error", error.getMessage());
+
+				}
+			});
+
+			requestQueue = Volley.newRequestQueue(this);
+			requestQueue.add(request);
 		}
-		JsonObjectRequest request=new JsonObjectRequest(Request.Method.POST, url, paramsApi, new Response.Listener<JSONObject>() {
-			@Override
-			public void onResponse(JSONObject response) {
-				System.out.printf("Response", ""+response);
-
-			}
-		}, new Response.ErrorListener() {
-			@Override
-			public void onErrorResponse(VolleyError error) {
-				System.out.printf("Error", error.getMessage());
-
-			}
-		}) ;
-
-		requestQueue = Volley.newRequestQueue(this);
-		requestQueue.add(request);
 	}
 	////////////////////////////////////////////////////////////////////////////////////
 
