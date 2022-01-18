@@ -220,7 +220,7 @@ class MyAdapter extends BaseAdapter{
 						Scanflag=false;
 					}
 				}, 0, SCAN_INTERVAL);
-				scan.setText("ֹͣ");
+				scan.setText("ֹͣParar");
 			}else{
 				//cancelScan();
 				isCanceled = true;
@@ -291,7 +291,7 @@ class MyAdapter extends BaseAdapter{
 		if(timer != null){
 			timer.cancel();
 			timer = null;
-			scan.setText("Parar");
+			scan.setText("Escanear BT");
 			scanResult.clear();
 			if (myAdapter != null) {
 				myAdapter.mList.clear();

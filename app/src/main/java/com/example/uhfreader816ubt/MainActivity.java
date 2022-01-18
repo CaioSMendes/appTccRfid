@@ -222,9 +222,9 @@ public class MainActivity extends Activity implements OnClickListener{
 			 }else{
 				 scan_flag=true;
 				 stopdiscover=false;
-				 connect_state.setText("disconnected");
+				 connect_state.setText("Desconectado");
 				 scanLeDevice(false);
-				 scan_btn.setText("Aqui Main Activity");
+				 scan_btn.setText("Escanear BT");
 			 }
 		}
 	}  
